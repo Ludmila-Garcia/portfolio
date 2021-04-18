@@ -17,8 +17,25 @@ body {
 
 /*--------------INÍCIO DO HEADER---------------------*/
 header {
-    background-color: #DEDEDE;
+    background: linear-gradient(
+    135deg, 
+    rgb(18, 194, 233), 
+    rgb(196, 113, 237), 
+    rgb(246, 79, 89)
+  );
+  background-size: 400%;
+  animation: my-animation 5s infinite alternate;
   }
+
+  @keyframes my-animation {
+    from {
+      background-position: 0%;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
+  
 
   header .container {
     display: flex;
@@ -46,7 +63,7 @@ header {
   
   header nav ul li a {
     text-decoration: none;
-    color:#000000;
+    color: #fff;
     font-size: 16px; /*era 14px*/ 
     padding: 24px;
     transition: all 250ms linear 0s;
@@ -54,7 +71,10 @@ header {
   
   header nav ul li a:hover {
     /*background: rgba(255,255,255, 0.15)*/
-    background: #C4C4C4;
+    background: #fff;
+    opacity: 0.7;
+    color: #000000;
+    font-size: larger;
   }
 
   /*--------------FIM DO HEADER---------------------*/
@@ -63,11 +83,11 @@ header {
 /* ----------INÍCIO DE BOTÕES E TÍTULOS-------------------*/
 
 p {
-    color: #727272;
-    font-size: 24px;/*verificar era 36px*/
+    color: #000000;
+    font-size: 18px;/*verificar era 36px*/
     line-height: 46px;
     
-        /*Conforme wireframe*/
+    /*Conforme wireframe*/
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -77,6 +97,7 @@ p {
         /* identical to box height */
 }
 
+/*descrição das seções 1,2,3,e 4*/
 #descricao {
     color: rgb(0, 0, 0);
     font-size: 18px;/*verificar era 36px*/
@@ -107,6 +128,9 @@ h2 {
   
 
   h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
     color:#000000;
     font-size: 32px;
     line-height: 48px;
@@ -116,42 +140,61 @@ h2 {
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
-    color: #000000;
-    background-color: #C4C4C4;
+    color: #fff;
     margin: 36px 0px 0px;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
     transition: all 150ms linear 0s;
 
-    border: 1px solid #000000;
+    border: 1px solid #fff;
     box-sizing: border-box;
 
     border-radius:5%;
     -moz-border-radius:5%;
     -webkit-border-radius:5%;
+
+    background: linear-gradient(
+    135deg, 
+    rgb(18, 194, 233), 
+    rgb(196, 113, 237), 
+    rgb(246, 79, 89)
+  );
+  background-size: 400%;
+  animation: my-animation 5s infinite alternate;
   }
   
   .button:hover {
-    opacity: 0.9;
+    opacity: 0.7;
+    color: #fff;
+    font-size: large;
   }
   
-
+/*------------BOTÃO CURRÍCULO----background: #fff;-------------*/
   #id-curriculo {
     padding: 10px;
-    color: #000000;
-    background: #C4C4C4;
-    border: 2px solid #262626;
+    color: #fff;
+    
+    border: 3px solid #fff;
     box-sizing: border-box;
 
     border-radius:5%;
     -moz-border-radius:5%;
     -webkit-border-radius:5%;
+    background: linear-gradient(
+    135deg, 
+    rgb(18, 194, 233), 
+    rgb(196, 113, 237), 
+    rgb(246, 79, 89)
+  );
+  background-size: 400%;
+  animation: my-animation 5s infinite alternate;
 }
 
 #id-curriculo:hover {
-    background: #b4b4b4;
-    color: white;
+    background: #fff;
+    opacity: 0.7;
+    color: #000000;
 }
 
 /*------------FIM BOTÕES E TÍTULOS-----------*/  
@@ -161,32 +204,42 @@ h2 {
 
 
 /*=============== 
-HERO
+INÍCIO SEÇÃO 1
 ==================*/
-section.hero {
-    margin: 50px 0;
+section.section-contact {
+    /*superior 96, d e e =0 inferior 0*/
+    margin: 96px 0px 0px;
   }
   
-  section.hero .container {
+  section.section-contact .container {
     width: 980px;
-    margin: auto;
-  
+    margin: auto;  
     display: flex;
+    
   }
   
-  section.hero p {
-    color: rgb(154, 142, 191);
+  section.section-contact p {
+    color:#000000;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 10px 0px 0px;
+  }
+  section.section-contact .container #letter-name{
+    color:#727272;
     font-size: 18px;
     line-height: 32px;
     margin: 10px 0px 0px;
   }
 
 /*=============== 
-FIM HERO
+FIM SEÇÃO 1
 ==================*/
+
+
 /*-----------------INÍCIO SEÇÃO 2 ----------------*/
-section .secao2 {
-    margin: 50px 0;
+section.secao2 {
+   /*superior=180px, direita e esquerda =0px inferior 0px*/
+    margin: 180px 0px 0px;
 }
       
 section.secao2 .container {
@@ -194,22 +247,117 @@ section.secao2 .container {
     justify-content: space-between;
     width: 980px;
     margin: auto;
-      
-    display: flex;
 }
       
 section.secao2 p {
-    color: rgb(154, 142, 191);
+    color: #000000;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 27px;
     margin: 10px 0px 0px;
 }
 
 section.secao2 #image1{
-    
     width: 320px;
     height: 320px;
-   
-
-    border: 1px solid #000000;}
+  }
     
+/* FIM SEÇÃO 2*/
+
+
+/*--------INÍCIO SEÇÃO 3---------------*/
+section.secao3 {
+  margin: 120px 0;
+}
+
+section.secao3 .container{
+  display: block;
+  width: 980px;
+  margin: auto;
+}
+
+section.secao3 p{
+  color: #000000;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 10px 0px 0px;
+}
+
+section.secao3 .container #experiences{
+  margin: 16px 0px 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+section.secao3 .container #title-role{
+  margin: 0px 0px 16px 13px;
+}
+
+section.secao3 .container #experiences2{
+  margin: 64px 0px 0px 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+/*---------FIM SEÇÃO 3------------------------*/
+
+/*--------INÍCIO SEÇÃO 4---------------*/
+section.secao4 {
+  margin: 0px 0px 144px 0px;
+}
+
+section.secao4 .container{
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: auto;
+}
+
+section.secao4 p{
+  color: #000000;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 10px 0px 0px;
+}
+/*FIM SEÇÃO 4*/
+
+/*----INÍCIO SEÇÃO PROJECTS------*/
+section.projects {
+  /*superior e inferior=50px, direita e esquerda =0px*/
+   margin: 50px 0px;
+}
+     
+section.projects .container-projects {
+   padding-top: 64px;
+   display: flex;
+   justify-content: space-between;
+   width: 980px;
+   margin: auto;
+}
+     
+section.projects p {
+   color: #000000;
+   font-size: 18px;
+   line-height: 27px;
+   margin: 10px 0px 0px;
+}
+
+section.projects #image-project{
+   
+   width: 320px;
+   height: 210px;
+   border: 1px solid #000000;
+ }
+  
