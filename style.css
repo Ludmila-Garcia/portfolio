@@ -7,12 +7,22 @@
   outline: 0;
 }
 
+html{
+  /* A cada 1rem será considerado 10px */
+  font-size: 62.5%;
+}
+
 html,
 body {
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+body{
+  /*Seria o mesmo que 16px neste caso*/
+  font-size: 1.6rem;
 }
 
 /*--------------INÍCIO DO HEADER---------------------*/
@@ -41,11 +51,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
-    width: 980px;
+
+    width: 90%;
+    max-width: 980px;
     margin: auto;
-    height: 72px; /*era: sem essa linha*/
   }
+  
   
   header img {
     width: 40px;
@@ -64,8 +75,8 @@ header {
   header nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px; /*era 14px*/ 
-    padding: 24px;
+    font-size: 1.6rem; /*era 14px*/ 
+    padding: 2.4rem;
     transition: all 250ms linear 0s;
   }
   
@@ -84,8 +95,8 @@ header {
 
 p {
     color: #000000;
-    font-size: 18px;/*verificar era 36px*/
-    line-height: 46px;
+    font-size: 1.8rem;/*verificar era 36px*/
+    line-height: 4.6rem;
     
     /*Conforme wireframe*/
     font-family: Poppins;
@@ -100,21 +111,26 @@ p {
 /*descrição das seções 1,2,3,e 4*/
 #descricao {
     color: rgb(0, 0, 0);
-    font-size: 18px;/*verificar era 36px*/
-    line-height: 27px;/*46px*/
+    font-size: 1.8rem;/*verificar era 36px*/
+    line-height: 2.7rem;/*46px*/
+    text-align: justify;
     
         /*Conforme wireframe*/
     font-family: Poppins;
     font-style: normal;
     font-family: Poppins;
     font-weight: normal;
-    line-height: 27px;
+    line-height: 2.7rem;
+}
+
+.divdescricao{
+  margin-right: 20px;
 }
 
 h2 {
     color: #000000;
-    font-size: 72px;/*verificar era 36px*/
-    line-height: 108px;
+    font-size: 7.2rem;/*verificar era 36px*/
+    line-height: 10.8rem;
 
     /*Conforme wireframe*/
     font-family: Poppins;
@@ -132,13 +148,13 @@ h2 {
     font-style: normal;
     font-weight: bold;
     color:#000000;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
   }
   
   .button {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #fff;
     margin: 36px 0px 0px;
@@ -212,7 +228,8 @@ section.section-contact {
   }
   
   section.section-contact .container {
-    width: 980px;
+    width: 90%;
+    max-width: 980px;
     margin: auto;  
     display: flex;
     
@@ -220,14 +237,14 @@ section.section-contact {
   
   section.section-contact p {
     color:#000000;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
     margin: 10px 0px 0px;
   }
   section.section-contact .container #letter-name{
     color:#727272;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
     margin: 10px 0px 0px;
   }
 
@@ -245,14 +262,15 @@ section.secao2 {
 section.secao2 .container {
     display: flex;
     justify-content: space-between;
-    width: 980px;
+    width: 90%;
+    max-width: 980px;
     margin: auto;
 }
       
 section.secao2 p {
     color: #000000;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
     margin: 10px 0px 0px;
 }
 
@@ -271,14 +289,15 @@ section.secao3 {
 
 section.secao3 .container{
   display: block;
-  width: 980px;
+  width: 90%;
+  max-width: 980px;
   margin: auto;
 }
 
 section.secao3 p{
   color: #000000;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   margin: 10px 0px 0px;
 }
 
@@ -287,8 +306,8 @@ section.secao3 .container #experiences{
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   /* identical to box height */
 
 
@@ -304,8 +323,8 @@ section.secao3 .container #experiences2{
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   /* identical to box height */
 
 
@@ -321,14 +340,15 @@ section.secao4 {
 section.secao4 .container{
   display: flex;
   justify-content: space-between;
-  width: 980px;
+  width:90%;
+  max-width: 980px;
   margin: auto;
 }
 
 section.secao4 p{
   color: #000000;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   margin: 10px 0px 0px;
 }
 /*FIM SEÇÃO 4*/
@@ -343,14 +363,15 @@ section.projects .container-projects {
    padding-top: 64px;
    display: flex;
    justify-content: space-between;
-   width: 980px;
+   width: 90%;
+  max-width: 980px;
    margin: auto;
 }
      
 section.projects p {
    color: #000000;
-   font-size: 18px;
-   line-height: 27px;
+   font-size: 1.8rem;
+   line-height: 2.7rem;
    margin: 10px 0px 0px;
 }
 
