@@ -382,3 +382,28 @@ section.projects #image-project{
    border: 1px solid #000000;
  }
   
+ /*media queries */
+ @media (max-width: 768px) {
+   html {
+     font-size: 50%;
+   }
+ }
+
+ @media (max-width: 663px) {
+  .secao2 .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .secao2 .container img {
+    order: -1;
+  }
+
+  .projects .container-projects {
+    flex-direction: column;
+    text-align: center;
+  }
+  .projects .container-projects img {
+    order: -1;
+  }
+
+}
