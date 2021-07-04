@@ -27,6 +27,11 @@ body{
 
 /*--------------INÍCIO DO HEADER---------------------*/
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
     background: linear-gradient(
     135deg, 
     rgb(18, 194, 233), 
@@ -379,7 +384,7 @@ section.projects #image-project{
    
    width: 320px;
    height: 210px;
-   border: 1px solid #000000;
+   border: 1px solid #b3b3b3;
  }
   
  /*media queries */
