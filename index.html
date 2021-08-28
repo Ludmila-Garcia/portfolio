@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <script type="text/javascript" src="script.js"></script>
+    
     
     <title>Portfólio - Ludmila Garcia</title>
 </head>
@@ -15,10 +15,13 @@
 
   <header>
     <div class="container">
-      <img
-        src="./images/logotipo-ludmila.svg"
-        alt="Ludmila Garcia"
-      />
+      <a href="index.html"><img src="./images/logotipo-ludmila.svg" alt="Portfólio Ludmila"></a>      
+      <div class="menu-section on">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
         <nav>
           <ul>
             <li>
@@ -34,15 +37,17 @@
               <a href="#contato">Contato</a>
             </li>
             <li>
-              <a id="id-curriculo" href="#curriculo">Currículo</a>
+              <a id="id-curriculo" href="./arquivos/curriculo-ludmila.pdf" download="curriculo.pdf"
+              type="application/pdf">Currículo</a>
             </li>
           </ul>
         </nav>
       </div>
+      </div>
     </div>
   </header>
 
-  <section class="section-contact">
+  <section id="panel-main" class="section-contact">
     <div class="container">
       <div>
         <p id="letter-name">
@@ -234,10 +239,14 @@
           estou tendo ainda mais certeza de que esse é o foco que eu quero seguir, pois este projeto incrível que a empresa
           lançou com certeza está agregando muito conhecimento e valores na minha carreira profissional.
         </p>
-        <a href="#" class="button">Entrar em contato</a>
+        <a href="mailto:ludmilapaulagarcia@gmail.com" class="button">Entrar em contato</a>
       </div>
     </div>
   </section>
+
+  
+  <script src="jquery.js"></script>
+  <script src="index.js"></script>
 
 </body>
 </html>
